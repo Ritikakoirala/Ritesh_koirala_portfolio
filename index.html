@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef Ritesh Koirala | Culinary Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">Chef Ritesh</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Ritesh Koirala</h1>
+    <p class="hero-subtitle">Professional Chef & Culinary Artist</p>
+    <div class="hero-buttons">
+      <a href="#gallery" class="btn-primary">View Gallery</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
+</section>
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Motivated and detail-oriented Culinary Professional with hands-on experience gained through a 12-month internship at Le Royal Méridien Beach Resort & Spa, Dubai—a world-class 5-star luxury property. Demonstrated expertise in multi-outlet kitchen operations, fine dining mise en place, HACCP compliance, and high-volume food production.</p>
+        <p>Currently completing a Bachelor of Hotel Management (BHM) from Nepal Academy of Tourism and Hotel Management (NATHM). Seeking a Commis Chef Position within a luxury hotel.</p>
+        <div class="skills-list">
+          <span class="skill-tag">Fine Dining</span>
+          <span class="skill-tag">Multi-Outlet Operations</span>
+          <span class="skill-tag">HACCP Certified</span>
+          <span class="skill-tag">Food Safety</span>
+          <span class="skill-tag">Plating & Presentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="section dark">
+  <div class="container">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-subtitle">A visual journey through my culinary creations</p>
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <img src="image/20230213_172210.jpg" alt="Culinary Creation" loading="lazy">
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)">
+        <img src="image/20230415_093009.jpg" alt="Kitchen Experience" loading="lazy">
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)">
+        <img src="image/WhatsApp Image 2026-05-17 at 1.05.26 PM.jpeg" alt="Chef at Work" loading="lazy">
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <img src="image/IMG-20250303-WA0010~2.jpg" alt="Dish Presentation" loading="lazy">
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <img src="image/IMG-20250306-WA0022.jpg" alt="Culinary Art" loading="lazy">
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="lightbox" class="lightbox">
+  <span class="close-btn" onclick="closeLightbox()"><i class="fas fa-times"></i></span>
+  <span class="nav-btn prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></span>
+  <span class="nav-btn next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></span>
+  <div class="lightbox-content"><img id="lightbox-img" src="" alt=""></div>
+</div>
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Experience & Skills</h2>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="card-icon"><i class="fas fa-award"></i></div>
+        <h3>Dubai Internship</h3>
+        <p>12-month intensive internship at Le Royal Méridien Beach Resort & Spa, Dubai. Gained experience across four restaurant concepts.</p>
+      </div>
+      <div class="experience-card">
+        <div class="card-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Kitchen Operations</h3>
+        <p>Expertise in multi-outlet kitchen operations, mise en place, HACCP compliance, and high-volume food production.</p>
+      </div>
+      <div class="experience-card">
+        <div class="card-icon"><i class="fas fa-star"></i></div>
+        <h3>Culinary Skills</h3>
+        <p>Specializes in plating, presentation, fusion cuisine, time management, and food safety standards.</p>
+      </div>
+      <div class="experience-card">
+        <div class="card-icon"><i class="fas fa-trophy"></i></div>
+        <h3>Achievements</h3>
+        <p>Successfully completed international culinary training with technical excellence in luxury hospitality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section dark">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Let's create something extraordinary together</p>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>+977-9824916873</p></div></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>riteshkoirala8@gmail.com</p></div></div>
+        <div class="contact-item"><i class="fab fa-whatsapp"></i><div><h4>WhatsApp</h4><p>Available for inquiries</p></div></div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer><div class="container"><p>&copy; 2026 Chef Ritesh Koirala. All Rights Reserved.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
